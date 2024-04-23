@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const navigate = useNavigate();
   return (
-    <div className="mt-[100px] md:mx-[330px] h-[80vh] flex justify-center items-center ">
+    <div className="mt-[100px] mx-5 md:mx-[330px] h-[80vh] flex justify-center items-center ">
       <div className="border border-black rounded-lg w-[400px] py-5 ">
         <div>
           <h1 className="text-center text-[2.4rem]">Admin Signin</h1>

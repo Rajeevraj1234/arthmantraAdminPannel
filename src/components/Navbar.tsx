@@ -4,7 +4,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="z-[99] fixed inset-0 w-full h-[60px] shadow-md bg-[#e8ebed] py-10 flex justify-start md:justify-between px-10 items-center ">
+    <div className="z-[99] fixed inset-0 w-full h-[60px] shadow-md bg-[#e8ebed] py-10 flex justify-between md:justify-between px-10 items-center ">
       <div>
         <h1
           onClick={() => navigate("/")}

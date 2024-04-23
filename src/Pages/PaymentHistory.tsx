@@ -51,14 +51,14 @@ const globalQuestion = [
 
 const PaymentHistory = () => {
   return (
-    <div className="mt-20 mx-[200px]">
+    <div className="mt-20 md:mx-[200px]">
       <div>
-        <h1 className="text-[5rem] font-bold tracking-tighter mb-10">
+        <h1 className="text-[3rem] md:text-[5rem] mx-2 font-bold tracking-tighter mb-10">
           Transaction History
         </h1>
       </div>
       <div>
-        <div className=" overflow-x-auto shadow-md sm:rounded-lg">
+        <div className=" overflow-x-auto shadow-md rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
             <thead className="text-sm text-white uppercase bg-gray-600  select-none ">
               <tr>
