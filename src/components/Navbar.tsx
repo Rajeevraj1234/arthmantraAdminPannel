@@ -1,12 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
-
 const Navbar = () => {
   const navigate = useNavigate();
 
-
   return (
-    <div className="z-[99] fixed inset-0 w-full h-[60px] shadow-md bg-[#e8ebed] py-10 flex justify-start md:justify-start px-10 items-center ">
+    <div className="z-[99] fixed inset-0 w-full h-[60px] shadow-md bg-[#e8ebed] py-10 flex justify-start md:justify-between px-10 items-center ">
       <div>
         <h1
           onClick={() => navigate("/")}
@@ -15,7 +13,18 @@ const Navbar = () => {
           <img src="logo/LOGO.png" className="w-[100px]" alt="" />
         </h1>
       </div>
-      
+
+      <div>
+        <button
+          onClick={() => {
+            navigate("/signin");
+          }}
+          className="bg-[#423737] py-2 px-5 rounded-md text-white font-medium"
+        >
+          Signin
+        </button>
+      </div>
+
       {/* <div>
         <ul className="gap-2 lg:gap-10 text-sm md:text-lg cursor-pointer hidden sm:flex items-center">
           <li
@@ -43,7 +52,7 @@ const Navbar = () => {
             Login
           </li> */}
 
-          {/* {name ? (
+      {/* {name ? (
             <li className="flex items-center gap-2 relative">
               <span
                 onClick={() => {

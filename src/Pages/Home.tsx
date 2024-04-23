@@ -1,17 +1,52 @@
 import { useNavigate } from "react-router-dom";
+import { FaUser } from "react-icons/fa6";
+import { FaUserTie } from "react-icons/fa6";
+import { MdPayment } from "react-icons/md";
+import { IoGitPullRequestSharp } from "react-icons/io5";
 
 const Home = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <div className="mt-20 mx-[200px]">
-      <div>
-        <h1 className="text-[5rem] font-bold tracking-tighter">Arth Mantra Admin Pannel</h1>
+    <div className="mt-20 mx-[200px] h-[80vh] flex justify-center items-center">
+      <div className="w-1/2">
+        <h1 className="text-[5rem] font-bold tracking-tighter leading-[100px]">
+          Arth Mantra Admin Pannel
+        </h1>
+        <h3 className="text-2xl mt-3 ">Hello, Jhon Doe</h3>
       </div>
-      <div className="mt-20">
-        <button onClick={()=>navigate("/users")} className="block border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-[#242662] hover:bg-[#5455b1] text-white font-bold ">Users</button>
-        <button onClick={()=>navigate("/instructors")} className="block border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-[#242662] hover:bg-[#5455b1] text-white font-bold ">Instructor</button>
-        <button onClick={()=>navigate("/paymenthistory")} className="block border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-[#242662] hover:bg-[#5455b1] text-white font-bold ">Paymet History</button>
-        <button onClick={()=>navigate("/instructor-request")} className="block border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-[#242662] hover:bg-[#5455b1] text-white font-bold ">Instructor Request</button>
+      <div className="mt-20 w-1/2 flex justify-center items-center ">
+        <div>
+          <button
+            onClick={() => navigate("/users")}
+            className="border 4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-green-600 hover:bg-green-500 text-white shadow-lg font-bold flex justify-center items-center  gap-2 rounded-lg"
+          >
+            {" "}
+            <FaUser />
+            Users
+          </button>
+          <button
+            onClick={() => navigate("/instructors")}
+            className="border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-green-600 hover:bg-green-500 text-white shadow-lg font-bold flex justify-center items-center  gap-2 rounded-lg"
+          >
+            {" "}
+            <FaUserTie />
+            Instructor
+          </button>
+          <button
+            onClick={() => navigate("/paymenthistory")}
+            className="border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-green-600 hover:bg-green-500 text-white shadow-lg font-bold flex justify-center items-center gap-2 rounded-lg "
+          >
+            <MdPayment />
+            Paymet History
+          </button>
+          <button
+            onClick={() => navigate("/instructor-request")}
+            className="border px-4 py-4 text-xl tracking-wide w-[400px] mb-10 bg-green-600 hover:bg-green-500 text-white shadow-lg font-bold flex justify-center items-center  gap-2 rounded-lg"
+          >
+            <IoGitPullRequestSharp />
+            Instructor Request
+          </button>
+        </div>
       </div>
     </div>
   );
