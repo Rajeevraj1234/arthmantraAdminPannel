@@ -2,7 +2,7 @@ const userDetail = () => {
   return (
     <div className="mt-20 mx-2 md:mx-[200px]">
       <div>
-        <h1 className="text-[3.5rem] md:text-[4rem] font-bold ">Exmaple Malhotra</h1>
+        <h1 className="text-[3.5rem] md:text-[4rem] font-bold ">Exmaple  </h1>
       </div>
       <div className="mb-10">
         <div>Email: expmple.com</div>

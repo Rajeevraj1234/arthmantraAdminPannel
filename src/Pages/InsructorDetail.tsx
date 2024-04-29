@@ -2,7 +2,7 @@ const InsructorDetail = () => {
   return (
     <div className="mt-20 mx-2 md:mx-[200px]">
       <div>
-        <h1 className="text-[4rem] font-bold ">Instructor Malhotra</h1>
+        <h1 className="text-[4rem] font-bold ">Instructor  </h1>
       </div>
       <div className="mb-10">
         <div>Email: expmple.com</div>
